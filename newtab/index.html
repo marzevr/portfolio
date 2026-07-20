@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>New Tab</title>
+	<meta charset="UTF-8">
+	 <meta content="New Tab replaces your homepage and new tab page featuring search forms to Google, YouTube and Amazon, direct bookmarks and daily quotes." name="description">
+	<meta content="new tab, bookmarks, quotes, inspirational, homepage, search engine" name="keywords">
+	<meta name="author" content="Marios Evripidou">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link href="./icons/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link rel="preload" as="image" href="img/main.jpg" type="image/jpeg">
+</head>
+
+<body>
+<center>
+
+<div class="bg">
+	<br> <br> <br>
+	<b><script src="./js/showdate.js"></script><b>
+</div>
+
+<div class="middle">
+	<div class="forms">
+	<br><br><br>
+		<form method="get" action="https://www.google.com/search" accept-charset="UTF-8">
+			<input type="text" class="search rounded" name="q" size="70" value="" placeholder="Search Google" onclick="this.form.reset();" autocomplete="off" autofocus>
+		</form>
+		<br>
+		
+		<form method="get" action="https://www.youtube.com/results" accept-charset="UTF-8">
+			<input type="text" class="search rounded" name="search_query" size="70" value="" placeholder="Search YouTube" onclick="this.form.reset();" autocomplete="off">
+		</form>
+		<br>
+		
+		<form method="get" action="https://www.amazon.com/gp/search" accept-charset="UTF-8">
+			<input type="text" class="search rounded" name="keywords" size="70" placeholder="Search Amazon" onclick="this.form.reset();" autocomplete="off">
+		</form>
+		<br>
+
+	</div>
+</div>
+
+<div class="fav">
+	<span class="image-group">
+		<a href="https://gmail.google.com" > <img class="img-fav" src="./icons/email.png" alt="email"></a>
+		<a href="https://contacts.google.com" > <img class="img-fav" src="./icons/contacts.png" alt="contacts"></a>
+		<a href="https://calendar.google.com/calendar/r/week?tab=Cc&pli=1"> <img class="img-fav" src="./icons/calendar.png" alt="calendar"></a>
+		<a href="https://docs.google.com"> <img class="img-fav" src="./icons/googledocs.png" alt="google-docs"></a>
+		<a href="https://www.office.com/?auth=1"> <img class="img-fav" src="./icons/365.png" alt="office"></a>
+	</span>
+
+	<span class="image-group">
+		<a href="https://www.facebook.com"> <img class="img-fav" src="./icons/facebook.png" alt="facebook"></a>
+		<a href="https://www.instagram.com"> <img class="img-fav" src="./icons/instagram.png" alt="instagram"></a>
+		<a href="https://www.x.com"> <img class="img-fav" src="./icons/twitter.png" alt="twitter"></a>
+		<a href="https://www.tiktok.com"> <img class="img-fav" src="./icons/tiktok.png" alt="tiktok"></a>
+		<a href="https://www.linkedin.com"> <img class="img-fav" src="./icons/linkedin.png" alt="linkedin"></a>
+	</span>	
+	
+	<span class="image-group">
+		<a href="https://www.youtube.com"> <img class="img-fav" src="./icons/youtube.png" alt="youtube"></a>
+		<a href="https://music.youtube.com"> <img class="img-fav" src="./icons/ymusic.png" alt="youtube-music"></a>
+		<a href="https://www.spotify.com"> <img class="img-fav" src="./icons/spotify.png" alt="spotify"></a>
+		<a href="https://www.google.com/maps"> <img class="img-fav" src="./icons/googlemaps.png" alt="google-maps"></a>
+		<a href="https://translate.google.com"> <img class="img-fav" src="./icons/googletranslate.png" alt="google-translate"></a>
+	</span>
+</div>
+
+<div class="quotes">	
+	<i><script type="text/javascript" src="js/quotes.js"></script></i>
+</div>
+
+</center>
+</body>
+</html>

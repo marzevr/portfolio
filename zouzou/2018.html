@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Marios Evripidou | Zouzou" name="title"/>
+<meta content="Zouzou the cat in her day to day endeavours." name="description"/>
+<meta content="Marios Evripidou" name="author"/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Marios Evripidou | Zouzou">
+<meta property="og:description" content="Zouzou the cat in her day to day endeavours. A tribute to a gentle spirit and loving companion.">
+<meta property="og:image" content="https://marios.evripidou.me/zouzou/img/zouzou.jpg">
+<meta property="og:url" content="https://marios.evripidou.me/zouzou">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marios Evripidou | Zouzou">
+<meta name="twitter:description" content="Zouzou the cat in her day to day endeavours. A tribute to a gentle spirit and loving companion.">
+<meta name="twitter:image" content="https://marios.evripidou.me/zouzou/img/zouzou.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://marios.evripidou.me/zouzou">
+
+<!-- Other Enhancements -->
+<meta name="theme-color" content="#0d0d0d">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="© 2025 Marios Evripidou">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta http-equiv="Content-Language" content="en">
+
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<title>Zouzou | Gallery 2018</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #0d0d0d;
+            color: #f0f0f0;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #306AC0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff4081;
+        }
+
+        header {
+            background: url('img/moon-cover.jpg') no-repeat center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: #000;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: absolute;
+            bottom: -90px;
+            object-fit: cover;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 60px;
+        }
+
+        p {
+            font-size: 1.1em;
+            opacity: 0.85;
+            margin: 15px 0;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 12px;
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .footer {
+            padding: 30px 20px;
+            background: #0d0d0d;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .modal .close:hover {
+            color: #ccc;
+        }
+
+        @media(max-width: 900px) {
+            .photo-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .photo-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+		
+	.modal img {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+	}
+	.modal img.visible {
+		opacity: 1;
+	}
+    
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+</head>
+<body>
+<header>
+<img alt="Marios Evripidou" class="profile-pic" src="img/profile.jpg"/>
+</header>
+<section>
+<h1>Marios Evripidou <span style="color: #306AC0;">Zouzou</span></h1>
+<p>Playful • Joyful • Cherished</p>
+<p>Zouzou was born in May 2012, a tiny soul with a gentle spirit. On July 14th of that same year, she was adopted into a world that would become her own. Her life was a journey, woven with quiet moments and playful days, each one a chapter filled with tenderness. Through the years, Zouzou grew, her presence a constant source of comfort, joy, and companionship. Her story came to a close on March 8th, 2024, but her memory, like a soft whisper, lingers on, forever etched in the hearts of those who knew her.</p>
+<p><em>...forever in my heart, eternal in my soul, there's something about you that made me whole...</em></p>
+</section>
+
+<section>
+<h2>Gallery 2018</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px;">
+<a href="index.html" style="font-weight: 600; margin-right: 20px;">⇠ Home</a>
+<a href="2012.html#gallery">2012</a>
+<a href="2013.html#gallery">2013</a>
+<a href="2014.html#gallery">2014</a>
+<a href="2015.html#gallery">2015</a>
+<a href="2016.html#gallery">2016</a>
+<a href="2017.html#gallery">2017</a>
+<span style="font-weight: 1000; color: #306AC0;">2018</span>
+<a href="2019.html#gallery">2019</a>
+<a href="2020.html#gallery">2020</a>
+<a href="2021.html#gallery">2021</a>
+<a href="2022.html#gallery">2022</a>
+<a href="2023.html#gallery">2023</a>
+<a href="2024.html#gallery">2024</a>
+</div>
+<div id="gallery" class="photo-gallery">
+<img src="img/2018/tn/2018-01-01-16-40-27.jpg" alt="" onclick="openModal('img/2018/2018-01-01-16-40-27.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-01-16-40-35.jpg" alt="" onclick="openModal('img/2018/2018-01-01-16-40-35.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-02-09-13-13.jpg" alt="" onclick="openModal('img/2018/2018-01-02-09-13-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-02-14-51-28.jpg" alt="" onclick="openModal('img/2018/2018-01-02-14-51-28.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-03-22-21-16.jpg" alt="" onclick="openModal('img/2018/2018-01-03-22-21-16.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-04-08-12-51.jpg" alt="" onclick="openModal('img/2018/2018-01-04-08-12-51.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-05-10-49-43.jpg" alt="" onclick="openModal('img/2018/2018-01-05-10-49-43.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-06-07-50-13.jpg" alt="" onclick="openModal('img/2018/2018-01-06-07-50-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-08-08-07-10.jpg" alt="" onclick="openModal('img/2018/2018-01-08-08-07-10.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-12-19-02-02.jpg" alt="" onclick="openModal('img/2018/2018-01-12-19-02-02.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-12-19-02-21.jpg" alt="" onclick="openModal('img/2018/2018-01-12-19-02-21.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-12-19-07-11.jpg" alt="" onclick="openModal('img/2018/2018-01-12-19-07-11.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-13-16-20-02.jpg" alt="" onclick="openModal('img/2018/2018-01-13-16-20-02.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-13-16-20-43.jpg" alt="" onclick="openModal('img/2018/2018-01-13-16-20-43.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-14-15-17-49.jpg" alt="" onclick="openModal('img/2018/2018-01-14-15-17-49.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-21-18-06-18.jpg" alt="" onclick="openModal('img/2018/2018-01-21-18-06-18.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-24-20-08-39.jpg" alt="" onclick="openModal('img/2018/2018-01-24-20-08-39.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-26-18-39-03a.jpg" alt="" onclick="openModal('img/2018/2018-01-26-18-39-03a.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-01-30-07-58-50.jpg" alt="" onclick="openModal('img/2018/2018-01-30-07-58-50.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-02-08-14-40.jpg" alt="" onclick="openModal('img/2018/2018-02-02-08-14-40.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-03-08-37-01.jpg" alt="" onclick="openModal('img/2018/2018-02-03-08-37-01.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-03-08-41-56.jpg" alt="" onclick="openModal('img/2018/2018-02-03-08-41-56.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-04-11-16-44.jpg" alt="" onclick="openModal('img/2018/2018-02-04-11-16-44.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-06-19-54-32.jpg" alt="" onclick="openModal('img/2018/2018-02-06-19-54-32.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-10-08-24-42.jpg" alt="" onclick="openModal('img/2018/2018-02-10-08-24-42.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-13-23-08-29.jpg" alt="" onclick="openModal('img/2018/2018-02-13-23-08-29.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-18-16-28-59.jpg" alt="" onclick="openModal('img/2018/2018-02-18-16-28-59.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-02-19-11-40-47.jpg" alt="" onclick="openModal('img/2018/2018-02-19-11-40-47.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-03-09-50-18.jpg" alt="" onclick="openModal('img/2018/2018-03-03-09-50-18.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-03-14-24-04.jpg" alt="" onclick="openModal('img/2018/2018-03-03-14-24-04.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-03-14-25-51.jpg" alt="" onclick="openModal('img/2018/2018-03-03-14-25-51.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-10-11-27-22.jpg" alt="" onclick="openModal('img/2018/2018-03-10-11-27-22.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-10-16-29-40a.jpg" alt="" onclick="openModal('img/2018/2018-03-10-16-29-40a.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-17-07-51-03.jpg" alt="" onclick="openModal('img/2018/2018-03-17-07-51-03.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-18-08-53-59.jpg" alt="" onclick="openModal('img/2018/2018-03-18-08-53-59.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-18-08-54-06.jpg" alt="" onclick="openModal('img/2018/2018-03-18-08-54-06.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-22-08-25-49.jpg" alt="" onclick="openModal('img/2018/2018-03-22-08-25-49.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-22-08-26-16.jpg" alt="" onclick="openModal('img/2018/2018-03-22-08-26-16.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-25-18-09-09.jpg" alt="" onclick="openModal('img/2018/2018-03-25-18-09-09.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-29-19-29-20.jpg" alt="" onclick="openModal('img/2018/2018-03-29-19-29-20.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-03-31-16-31-58.jpg" alt="" onclick="openModal('img/2018/2018-03-31-16-31-58.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-01-14-22-27.jpg" alt="" onclick="openModal('img/2018/2018-04-01-14-22-27.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-01-18-44-57.jpg" alt="" onclick="openModal('img/2018/2018-04-01-18-44-57.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-09-16-06-38.jpg" alt="" onclick="openModal('img/2018/2018-04-09-16-06-38.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-09-16-06-51.jpg" alt="" onclick="openModal('img/2018/2018-04-09-16-06-51.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-09-17-37-04.jpg" alt="" onclick="openModal('img/2018/2018-04-09-17-37-04.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-13-08-31-12.jpg" alt="" onclick="openModal('img/2018/2018-04-13-08-31-12.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-14-17-09-41.jpg" alt="" onclick="openModal('img/2018/2018-04-14-17-09-41.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-14-17-10-54.jpg" alt="" onclick="openModal('img/2018/2018-04-14-17-10-54.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-15-09-44-54.jpg" alt="" onclick="openModal('img/2018/2018-04-15-09-44-54.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-15-10-21-48.jpg" alt="" onclick="openModal('img/2018/2018-04-15-10-21-48.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-18-08-20-23.jpg" alt="" onclick="openModal('img/2018/2018-04-18-08-20-23.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-19-20-02-11.jpg" alt="" onclick="openModal('img/2018/2018-04-19-20-02-11.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-20-21-56-58.jpg" alt="" onclick="openModal('img/2018/2018-04-20-21-56-58.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-21-06-36-13.jpg" alt="" onclick="openModal('img/2018/2018-04-21-06-36-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-22-15-25-27a.jpg" alt="" onclick="openModal('img/2018/2018-04-22-15-25-27a.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-22-21-35-13.jpg" alt="" onclick="openModal('img/2018/2018-04-22-21-35-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-04-29-16-09-09.jpg" alt="" onclick="openModal('img/2018/2018-04-29-16-09-09.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-06-17-10-13.jpg" alt="" onclick="openModal('img/2018/2018-05-06-17-10-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-12-17-21-10.jpg" alt="" onclick="openModal('img/2018/2018-05-12-17-21-10.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-13-14-21-43.jpg" alt="" onclick="openModal('img/2018/2018-05-13-14-21-43.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-19-08-12-09.jpg" alt="" onclick="openModal('img/2018/2018-05-19-08-12-09.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-20-20-32-05.jpg" alt="" onclick="openModal('img/2018/2018-05-20-20-32-05.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-21-08-36-52.jpg" alt="" onclick="openModal('img/2018/2018-05-21-08-36-52.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-21-18-44-19.jpg" alt="" onclick="openModal('img/2018/2018-05-21-18-44-19.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-27-08-21-04.jpg" alt="" onclick="openModal('img/2018/2018-05-27-08-21-04.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-27-22-54-00.jpg" alt="" onclick="openModal('img/2018/2018-05-27-22-54-00.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-27-22-54-06.jpg" alt="" onclick="openModal('img/2018/2018-05-27-22-54-06.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-28-15-41-36.jpg" alt="" onclick="openModal('img/2018/2018-05-28-15-41-36.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-05-30-08-39-22.jpg" alt="" onclick="openModal('img/2018/2018-05-30-08-39-22.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-03-21-44-19.jpg" alt="" onclick="openModal('img/2018/2018-06-03-21-44-19.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-05-20-58-38.jpg" alt="" onclick="openModal('img/2018/2018-06-05-20-58-38.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-07-21-01-01.jpg" alt="" onclick="openModal('img/2018/2018-06-07-21-01-01.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-10-23-12-17.jpg" alt="" onclick="openModal('img/2018/2018-06-10-23-12-17.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-11-08-05-59.jpg" alt="" onclick="openModal('img/2018/2018-06-11-08-05-59.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-11-08-26-53.jpg" alt="" onclick="openModal('img/2018/2018-06-11-08-26-53.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-13-19-42-01.jpg" alt="" onclick="openModal('img/2018/2018-06-13-19-42-01.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-14-19-08-04.jpg" alt="" onclick="openModal('img/2018/2018-06-14-19-08-04.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-14-19-11-52.jpg" alt="" onclick="openModal('img/2018/2018-06-14-19-11-52.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-17-18-53-58.jpg" alt="" onclick="openModal('img/2018/2018-06-17-18-53-58.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-17-21-52-17.jpg" alt="" onclick="openModal('img/2018/2018-06-17-21-52-17.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-18-21-28-02.jpg" alt="" onclick="openModal('img/2018/2018-06-18-21-28-02.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-23-12-00-10.jpg" alt="" onclick="openModal('img/2018/2018-06-23-12-00-10.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-30-16-33-57.jpg" alt="" onclick="openModal('img/2018/2018-06-30-16-33-57.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-06-30-17-37-43.jpg" alt="" onclick="openModal('img/2018/2018-06-30-17-37-43.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-01-16-45-53.jpg" alt="" onclick="openModal('img/2018/2018-07-01-16-45-53.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-02-07-57-10.jpg" alt="" onclick="openModal('img/2018/2018-07-02-07-57-10.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-02-11-54-05.jpg" alt="" onclick="openModal('img/2018/2018-07-02-11-54-05.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-04-07-09-52.jpg" alt="" onclick="openModal('img/2018/2018-07-04-07-09-52.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-05-08-29-38.jpg" alt="" onclick="openModal('img/2018/2018-07-05-08-29-38.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-06-07-30-03.jpg" alt="" onclick="openModal('img/2018/2018-07-06-07-30-03.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-08-18-32-01.jpg" alt="" onclick="openModal('img/2018/2018-07-08-18-32-01.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-10-20-59-44.jpg" alt="" onclick="openModal('img/2018/2018-07-10-20-59-44.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-11-19-25-10.jpg" alt="" onclick="openModal('img/2018/2018-07-11-19-25-10.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-14-09-06-57.jpg" alt="" onclick="openModal('img/2018/2018-07-14-09-06-57.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-14-19-36-49.jpg" alt="" onclick="openModal('img/2018/2018-07-14-19-36-49.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-15-17-36-48.jpg" alt="" onclick="openModal('img/2018/2018-07-15-17-36-48.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-15-17-47-12.jpg" alt="" onclick="openModal('img/2018/2018-07-15-17-47-12.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-18-08-25-18.jpg" alt="" onclick="openModal('img/2018/2018-07-18-08-25-18.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-19-08-29-13.jpg" alt="" onclick="openModal('img/2018/2018-07-19-08-29-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-21-01-51-26.jpg" alt="" onclick="openModal('img/2018/2018-07-21-01-51-26.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-21-18-47-45.jpg" alt="" onclick="openModal('img/2018/2018-07-21-18-47-45.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-21-18-47-46.jpg" alt="" onclick="openModal('img/2018/2018-07-21-18-47-46.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-22-21-04-07.jpg" alt="" onclick="openModal('img/2018/2018-07-22-21-04-07.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-22-22-33-24.jpg" alt="" onclick="openModal('img/2018/2018-07-22-22-33-24.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-23-06-58-52.jpg" alt="" onclick="openModal('img/2018/2018-07-23-06-58-52.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-29-09-51-37.jpg" alt="" onclick="openModal('img/2018/2018-07-29-09-51-37.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-07-30-21-53-29.jpg" alt="" onclick="openModal('img/2018/2018-07-30-21-53-29.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-01-07-55-24.jpg" alt="" onclick="openModal('img/2018/2018-08-01-07-55-24.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-04-18-12-24.jpg" alt="" onclick="openModal('img/2018/2018-08-04-18-12-24.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-04-18-13-50.jpg" alt="" onclick="openModal('img/2018/2018-08-04-18-13-50.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-05-12-20-05.jpg" alt="" onclick="openModal('img/2018/2018-08-05-12-20-05.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-07-06-30-38.jpg" alt="" onclick="openModal('img/2018/2018-08-07-06-30-38.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-08-22-20-03.jpg" alt="" onclick="openModal('img/2018/2018-08-08-22-20-03.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-11-21-37-01.jpg" alt="" onclick="openModal('img/2018/2018-08-11-21-37-01.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-12-15-21-54.jpg" alt="" onclick="openModal('img/2018/2018-08-12-15-21-54.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-15-13-10-56.jpg" alt="" onclick="openModal('img/2018/2018-08-15-13-10-56.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-19-08-50-42.jpg" alt="" onclick="openModal('img/2018/2018-08-19-08-50-42.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-19-11-55-21.jpg" alt="" onclick="openModal('img/2018/2018-08-19-11-55-21.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-21-11-12-43.jpg" alt="" onclick="openModal('img/2018/2018-08-21-11-12-43.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-24-16-43-32.jpg" alt="" onclick="openModal('img/2018/2018-08-24-16-43-32.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-24-17-10-54.jpg" alt="" onclick="openModal('img/2018/2018-08-24-17-10-54.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-27-21-30-30.jpg" alt="" onclick="openModal('img/2018/2018-08-27-21-30-30.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-29-21-53-31.jpg" alt="" onclick="openModal('img/2018/2018-08-29-21-53-31.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-08-30-08-48-36.jpg" alt="" onclick="openModal('img/2018/2018-08-30-08-48-36.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-08-10-24-43.jpg" alt="" onclick="openModal('img/2018/2018-09-08-10-24-43.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-08-15-08-33.jpg" alt="" onclick="openModal('img/2018/2018-09-08-15-08-33.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-09-08-05-35.jpg" alt="" onclick="openModal('img/2018/2018-09-09-08-05-35.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-09-12-13-08.jpg" alt="" onclick="openModal('img/2018/2018-09-09-12-13-08.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-10-07-01-20.jpg" alt="" onclick="openModal('img/2018/2018-09-10-07-01-20.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-12-08-48-58.jpg" alt="" onclick="openModal('img/2018/2018-09-12-08-48-58.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-13-20-37-13.jpg" alt="" onclick="openModal('img/2018/2018-09-13-20-37-13.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-13-21-23-54.jpg" alt="" onclick="openModal('img/2018/2018-09-13-21-23-54.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-15-10-49-54.jpg" alt="" onclick="openModal('img/2018/2018-09-15-10-49-54.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-15-19-29-05.jpg" alt="" onclick="openModal('img/2018/2018-09-15-19-29-05.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-26-22-22-39.jpg" alt="" onclick="openModal('img/2018/2018-09-26-22-22-39.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-09-29-11-17-58.jpg" alt="" onclick="openModal('img/2018/2018-09-29-11-17-58.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-06-21-54-26.jpg" alt="" onclick="openModal('img/2018/2018-10-06-21-54-26.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-14-22-08-39.jpg" alt="" onclick="openModal('img/2018/2018-10-14-22-08-39.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-17-06-59-21.jpg" alt="" onclick="openModal('img/2018/2018-10-17-06-59-21.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-19-08-56-33.jpg" alt="" onclick="openModal('img/2018/2018-10-19-08-56-33.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-21-08-44-08.jpg" alt="" onclick="openModal('img/2018/2018-10-21-08-44-08.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-21-10-35-00.jpg" alt="" onclick="openModal('img/2018/2018-10-21-10-35-00.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-21-17-00-24.jpg" alt="" onclick="openModal('img/2018/2018-10-21-17-00-24.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-21-17-01-32.jpg" alt="" onclick="openModal('img/2018/2018-10-21-17-01-32.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-27-13-53-41.jpg" alt="" onclick="openModal('img/2018/2018-10-27-13-53-41.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-27-15-37-39.jpg" alt="" onclick="openModal('img/2018/2018-10-27-15-37-39.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-28-07-20-22.jpg" alt="" onclick="openModal('img/2018/2018-10-28-07-20-22.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-28-11-45-53.jpg" alt="" onclick="openModal('img/2018/2018-10-28-11-45-53.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-30-08-12-21.jpg" alt="" onclick="openModal('img/2018/2018-10-30-08-12-21.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-30-08-13-21.jpg" alt="" onclick="openModal('img/2018/2018-10-30-08-13-21.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-30-08-18-46.jpg" alt="" onclick="openModal('img/2018/2018-10-30-08-18-46.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-10-31-13-58-07.jpg" alt="" onclick="openModal('img/2018/2018-10-31-13-58-07.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-01-20-49-42.jpg" alt="" onclick="openModal('img/2018/2018-11-01-20-49-42.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-02-08-31-27.jpg" alt="" onclick="openModal('img/2018/2018-11-02-08-31-27.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-10-13-25-34.jpg" alt="" onclick="openModal('img/2018/2018-11-10-13-25-34.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-13-07-58-20.jpg" alt="" onclick="openModal('img/2018/2018-11-13-07-58-20.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-17-16-19-57.jpg" alt="" onclick="openModal('img/2018/2018-11-17-16-19-57.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-18-11-57-27.jpg" alt="" onclick="openModal('img/2018/2018-11-18-11-57-27.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-11-20-06-41-14.jpg" alt="" onclick="openModal('img/2018/2018-11-20-06-41-14.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-02-20-28-10.jpg" alt="" onclick="openModal('img/2018/2018-12-02-20-28-10.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-15-10-10-21.jpg" alt="" onclick="openModal('img/2018/2018-12-15-10-10-21.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-16-14-25-27.jpg" alt="" onclick="openModal('img/2018/2018-12-16-14-25-27.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-16-14-35-07.jpg" alt="" onclick="openModal('img/2018/2018-12-16-14-35-07.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-16-20-16-06.jpg" alt="" onclick="openModal('img/2018/2018-12-16-20-16-06.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-19-17-41-09.jpg" alt="" onclick="openModal('img/2018/2018-12-19-17-41-09.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-21-08-46-01.jpg" alt="" onclick="openModal('img/2018/2018-12-21-08-46-01.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-31-14-14-17.jpg" alt="" onclick="openModal('img/2018/2018-12-31-14-14-17.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-31-14-14-39.jpg" alt="" onclick="openModal('img/2018/2018-12-31-14-14-39.jpg')" class="thumbnail">
+<img src="img/2018/tn/2018-12-31-15-26-49.jpg" alt="" onclick="openModal('img/2018/2018-12-31-15-26-49.jpg')" class="thumbnail">
+</div>
+</section>
+
+<section>
+  <p style="margin-top: 40px;">
+    <a href="index.html" style="font-weight: 600;">⇠ Home</a>
+  </p>
+</section>
+
+<div class="modal" id="modal" onclick="if(event.target.id==='modal')closeModal()">
+<span id="modalPrev" onclick="showPrevImage()" style="position:absolute;left:30px;font-size:60px;color:white;cursor:pointer;">‹</span><span class="close" onclick="closeModal()">×</span>
+<img id="modalImg" src=""/>
+<div id="spinner" style="position:absolute;width:60px;height:60px;border:6px solid #999;border-top:6px solid white;border-radius:50%;animation:spin 1s linear infinite;display:none;"></div>
+<span id="modalNext" onclick="showNextImage()" style="position:absolute;right:30px;font-size:60px;color:white;cursor:pointer;">›</span></div>
+
+	<div class="footer">
+		&copy; <span id="year"></span> <a href="https://marios.evripidou.me" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">Marios Evripidou</a>
+		&nbsp;|&nbsp; 
+		All Rights Reserved
+		&nbsp;|&nbsp;
+		<a href="https://marios.evripidou.me/privacy-policy.html" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">Privacy Policy</a>
+	</div>
+
+<script>
+let currentIndex = 0;
+let images = [];
+let isTransitioning = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+    images = Array.from(document.querySelectorAll('.photo-gallery img')).map(img => img.getAttribute('onclick').match(/'([^']+)'/)[1]);
+});
+
+function openModal(src) {
+    images = Array.from(document.querySelectorAll('.photo-gallery img')).map(img => img.getAttribute('onclick').match(/'([^']+)'/)[1]);
+    currentIndex = images.indexOf(src);
+
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const spinner = document.getElementById('spinner');
+
+    modalImg.classList.remove('visible');
+    spinner.style.display = 'block';
+
+    modalImg.onload = () => {
+        modalImg.classList.add('visible');
+        spinner.style.display = 'none';
+        isTransitioning = false;
+    };
+
+    modalImg.src = src;
+    modal.style.display = 'flex';
+    preloadAdjacentImages(currentIndex);
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modalImg').src = '';
+    document.getElementById('modalImg').classList.remove('visible');
+}
+
+function showNextImage() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex = (currentIndex + 1) % images.length;
+    const img = document.getElementById('modalImg');
+    const spinner = document.getElementById('spinner');
+
+    img.classList.remove('visible');
+    spinner.style.display = 'block';
+
+    img.onload = () => {
+        img.classList.add('visible');
+        spinner.style.display = 'none';
+        isTransitioning = false;
+    };
+
+    img.src = images[currentIndex];
+    preloadAdjacentImages(currentIndex);
+}
+
+function showPrevImage() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    const img = document.getElementById('modalImg');
+    const spinner = document.getElementById('spinner');
+
+    img.classList.remove('visible');
+    spinner.style.display = 'block';
+
+    img.onload = () => {
+        img.classList.add('visible');
+        spinner.style.display = 'none';
+        isTransitioning = false;
+    };
+
+    img.src = images[currentIndex];
+    preloadAdjacentImages(currentIndex);
+}
+
+function preloadAdjacentImages(index) {
+    const preload = (i) => {
+        const img = new Image();
+        img.src = images[i];
+    };
+
+    const nextIndex = (index + 1) % images.length;
+    const prevIndex = (index - 1 + images.length) % images.length;
+
+    preload(nextIndex);
+    preload(prevIndex);
+}
+
+document.addEventListener("keydown", function(e) {
+    if (document.getElementById("modal").style.display === "flex") {
+        if (e.key === "ArrowRight") {
+            showNextImage();
+        } else if (e.key === "ArrowLeft") {
+            showPrevImage();
+        } else if (e.key === "Escape") {
+            closeModal();
+        }
+    }
+});
+
+let startX = 0;
+
+document.getElementById('modal').addEventListener('touchstart', e => {
+    startX = e.changedTouches[0].screenX;
+});
+
+document.getElementById('modal').addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].screenX;
+    const deltaX = endX - startX;
+
+    if (Math.abs(deltaX) > 50) {
+        if (deltaX > 0) {
+            showPrevImage();
+        } else {
+            showNextImage();
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Set copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll-to-gallery handling
+    const hash = window.location.hash;
+    if (hash === "#gallery") {
+        history.scrollRestoration = "manual";
+        window.scrollTo(0, 0);
+        setTimeout(function () {
+            const offset = 200;
+            const target = document.querySelector(hash);
+            if (target) {
+                const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - offset;
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+            }
+        }, 100);
+    }
+});
+
+</script>
+
+</body>
+</html>

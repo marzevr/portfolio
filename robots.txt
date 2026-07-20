@@ -1,0 +1,46 @@
+# robots.txt for https://marios.evripidou.me
+# Purpose: Allow search engines to index the site while blocking known AI and data-scraping bots
+
+# Allow all standard search engine crawlers
+User-agent: *
+Disallow:
+
+# Disallow apps section
+Disallow: /apps/
+
+# Provide sitemap location
+Sitemap: https://marios.evripidou.me/sitemap.xml
+
+# Block known AI crawlers and scrapers
+
+# OpenAI GPTBot (used for training language models)
+User-agent: GPTBot
+Disallow: /
+
+# Google-Extended (used for Bard/Gemini training, not regular search)
+User-agent: Google-Extended
+Disallow: /
+
+# Common Crawl (used by many LLMs)
+User-agent: CCBot
+Disallow: /
+
+# Anthropic AI (Claude)
+User-agent: anthropic-ai
+Disallow: /
+
+# Amazon AI data crawler
+User-agent: Amazonbot
+Disallow: /
+
+# Facebook/Meta AI systems
+User-agent: facebookexternalhit
+Disallow: /
+
+# ByteDance (TikTok/CapCut AI crawlers)
+User-agent: Bytespider
+Disallow: /
+
+# oBot (less common but used for scraping)
+User-agent: oBot
+Disallow: /
